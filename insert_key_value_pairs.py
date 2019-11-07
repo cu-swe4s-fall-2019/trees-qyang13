@@ -14,6 +14,11 @@ hf = importlib.import_module("hash_functions")
 
 class Benchmark:
     def __init__(self, struct = None, data = None, num = None):
+        '''
+        init function for benchmarking adding and searching using different
+        data structures
+        initializes the datastructure based on the specification
+        '''
         self.struct = struct
         if struct == 'hash':
             # Initialize a hash table that 5 times the size of number of insertion
@@ -27,6 +32,9 @@ class Benchmark:
         self.num = num
 
     def time_insert(self):
+        '''
+        Depending on the structure type, add keys and values from the input file
+        '''
         insert_start = time.time()
         i = 0
         # Initialize a hash table that 5 times the size of number of insertion
@@ -48,6 +56,10 @@ class Benchmark:
         return i_time
 
     def time_search(self):
+        '''
+        Depending on the structure type, try to search for the same set of keys
+        that were just inserted all over again
+        '''
         search_start = time.time()
         i = 0
         # search for the same set of data that was inserted
@@ -69,6 +81,10 @@ class Benchmark:
 
 
     def time_search_not_exist(self):
+        '''
+        Depending on the structure type, try to search for a nonexistent key
+        for a specified number of times
+        '''
         search_ne_start = time.time()
         # The non-existent key, all keys are integers so any string would work
         ne_key = 'ne'
