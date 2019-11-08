@@ -23,10 +23,10 @@ Search for nonexistent element time for avl: 0.0049631595611572266
 ## Benchmarking
 ### Sorted keys
 When handling sorted keys, the hash table method implemented outperforms both tree implementations. For AVL trees, it takes longer to insert than the binary tree because it will need to re-balance once awhile. On the other hand, the binary tree takes longer to search when the key is sorted, because the tree is unbalanced that the search is almost like a linear search. But overall, when the dataset is large, and when the same dataset will be used multiple times for search, it's more efficient to use AVL.
-![](plots/Sorted_100.png|width=100)
-![](plots/Sorted_10000.png|width=100)
+![](plots/Sorted_100.png = 100x)
+![](plots/Sorted_10000.png = 100x)
 
 ### Random keys
 Similar to the discussion in the previous section, hash table outperforms the trees in every aspect. And consistently, even though AVL tree takes longer to insert new element, but because of a more balanced tree, AVL tree takes less time to search than the binary tree.
-![](plots/Random_100.png| width=100)
-![](plots/Random_10000.png|width=100)
+![](plots/Random_100.png = 100x)
+![](plots/Random_10000.png = 100x)
