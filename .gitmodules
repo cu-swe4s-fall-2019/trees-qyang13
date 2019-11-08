@@ -1,0 +1,6 @@
+[submodule "avl_tree"]
+	path = avl_tree
+	url = https://github.com/swe4s/avl_tree.git
+[submodule "hash-tables-qyang13"]
+	path = hash-tables-qyang13
+	url = https://github.com/cu-swe4s-fall-2019/hash-tables-qyang13.git
