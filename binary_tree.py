@@ -4,7 +4,8 @@ class Node:
         Initialization function to create a node object for the binary tree
         ---
         key - the key for the node, integer
-        value - the value associated with the key, could potentially be any type
+        value - the value associated with the key, could potentially be any
+        type
         left - the left branch, key value should be smaller
         right - the right branch, key value should be larger
         '''
@@ -21,17 +22,17 @@ def insert(root, key, value=None):
     key - the key for the node, integer
     value - the value associated with the key
     '''
-    if root == None:
+    if root is None:
         root = Node(key, value=value)
         return root
     else:
         if key < root.key:
-            if root.left == None:
+            if root.left is None:
                 root.left = Node(key, value=value)
             else:
                 insert(root.left, key, value=value)
         else:
-            if root.right == None:
+            if root.right is None:
                 root.right = Node(key, value=value)
             else:
                 insert(root.right, key, value=value)
@@ -45,7 +46,7 @@ def search(root, key):
     key - the key for the node, integer
     '''
     # Either the tree is empty or the specific key is not found
-    if root == None:
+    if root is None:
         return None
     else:
         if key == root.key:
