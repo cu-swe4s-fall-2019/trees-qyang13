@@ -21,7 +21,7 @@ Search for nonexistent element time for avl: 0.0049631595611572266
 ```
 
 ## Benchmarking
-![](plots/Sorted_10000.png)
-![](plots/Sorted_100.png)
-![](plots/Random_10000.png)
-![](plots/Random_100.png)
+### Sorted keys
+![](plots/Sorted_100.png)![](plots/Sorted_10000.png)
+### Random keys
+![](plots/Random_100.png)![](plots/Random_10000.png)
